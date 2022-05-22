@@ -1,0 +1,35 @@
+.parent-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 160px;
+  border: 1px solid;
+  height: 1px;
+}
+
+.or {
+  margin-top: 15px;
+  margin: 20px;
+  color: white;
+}
+
+.google {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 5px;
+  border-radius: 10px;
+}
+.google img {
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.google p {
+  margin-right: 10px;
+}
