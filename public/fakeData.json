@@ -1,0 +1,57 @@
+[
+  {
+    "_id": 1,
+    "name": "Auto Parts",
+    "Price": "5,500",
+    "shortDescription": " HF-2 Gloss Black with Brushed Face",
+    "minorderedqty": "190",
+    "availableQuantity": "300",
+
+    "image": "https://wp.brator.xyz/wp-content/uploads/2019/01/5a-225x225.jpg"
+  },
+  {
+    "_id": 2,
+    "name": "Auto Parts",
+    "Price": "2000",
+    "shortDescription": " M249 GAMMA Sliver with Full Chrome",
+    "minorderedqty": "120",
+    "availableQuantity": "470",
+    "image": "https://wp.brator.xyz/wp-content/uploads/2021/11/1a-225x225.jpeg"
+  },
+  {
+    "_id": 3,
+    "name": "Air Filters",
+    "Price": "3500",
+    "shortDescription": " Brand Name CV10 Satin Black with Chrome",
+    "minorderedqty": "70",
+    "availableQuantity": "400",
+    "image": "https://wp.brator.xyz/wp-content/uploads/2019/01/2a-225x225.jpg"
+  },
+  {
+    "_id": 4,
+    "name": "Car Care",
+    "Price": "7500",
+    "shortDescription": " Simple Leather Steering Wheel",
+    "minorderedqty": "50",
+    "availableQuantity": "170",
+    "image": "https://wp.brator.xyz/wp-content/uploads/2019/01/7a-225x225.jpg"
+  },
+  {
+    "_id": 5,
+    "name": "Custom Wheels",
+    "Price": "1500",
+    "shortDescription": " M249 GAMMA Sliver with Full Chrome",
+    "minorderedqty": "150",
+    "availableQuantity": "300",
+    "image": "https://wp.brator.xyz/wp-content/uploads/2019/01/22a-225x225.jpeg"
+  },
+  {
+    "_id": 6,
+    "name": "Air Filters",
+    "Price": "7500",
+    "shortDescription": " SV-F4 Matte Bronze with Chrome Flip",
+    "minorderedqty": "100",
+    "availableQuantity": "200",
+    "image": "https://wp.brator.xyz/wp-content/uploads/2019/01/19a-225x225.jpeg"
+  }
+]
