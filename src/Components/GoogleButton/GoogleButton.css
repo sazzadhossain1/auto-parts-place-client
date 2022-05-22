@@ -5,9 +5,10 @@
 }
 
 .line {
-  width: 160px;
+  width: 250px;
   border: 1px solid;
   height: 1px;
+  color: red;
 }
 
 .or {
@@ -20,7 +21,8 @@
   display: flex;
   margin: auto;
   align-items: center;
-  background-color: aquamarine;
+  box-shadow: 10px 10px 10px 10px rgba(159, 155, 163, 0.233);
+
   padding: 5px;
   border-radius: 10px;
 }
