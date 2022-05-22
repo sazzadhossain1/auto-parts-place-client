@@ -1,0 +1,82 @@
+import React from "react";
+
+const ExtraSectionTwo = () => {
+  return (
+    <div className="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-10 ml-40">
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-18.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-15.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-14.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-12.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-07.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-09.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-17.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-16.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-13.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-11.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/11/brand-08.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://wp.brator.xyz/wp-content/uploads/2021/10/brand-10.png"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ExtraSectionTwo;

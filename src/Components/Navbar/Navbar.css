@@ -1,0 +1,7 @@
+.color {
+  background-color: rgba(0, 0, 0, 0.685);
+  height: 100px;
+}
+.color .lin {
+  color: white;
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 border color">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -27,10 +28,47 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <Link className="text-xl" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/shop">
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/review">
+                Review
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/contact">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/login">
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link className="text-xl" to="/signUp">
+                SignUp
+              </Link>
             </li>
             <li tabindex="0">
-              <a className="justify-between">
+              <a className="justify-between text-xl">
                 Parent
                 <svg
                   className="fill-current"
@@ -43,11 +81,9 @@ const Navbar = () => {
                 </svg>
               </a>
               <ul className="p-2">
+                <li></li>
                 <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
+                  <a>dksajfkasdjfkljsdkfjsdf</a>
                 </li>
               </ul>
             </li>
@@ -56,15 +92,19 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Auto Parts Place</a>
+        <Link to="/" className="btn btn-ghost normal-case text-3xl ml-20 lin">
+          Auto Parts Place
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <Link to="/">Home</Link>
+            <Link className="text-xl lin" to="/">
+              Home
+            </Link>
           </li>
           <li tabindex="0">
-            <a>
+            <Link className="text-xl lin" to="/">
               Parent
               <svg
                 className="fill-current"
@@ -75,7 +115,7 @@ const Navbar = () => {
               >
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
-            </a>
+            </Link>
             <ul className="p-2">
               <li>
                 <a>Submenu 1</a>
@@ -86,12 +126,41 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <Link className="text-xl lin" to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link className="text-xl lin" to="/shop">
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link className="text-2xl lin" to="/review">
+              Review
+            </Link>
+          </li>
+          <li>
+            <Link className="text-xl lin" to="/blog">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link className="text-xl lin" to="/contact">
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link className="text-xl lin" to="/login">
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link className="text-xl lin" to="/signUp">
+              SignUp
+            </Link>
           </li>
         </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Get started</a>
       </div>
     </div>
   );
