@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import Products from "./Components/Products/Products";
+import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import Review from "./Components/Review/Review";
 import Shop from "./Components/Shop/Shop";
 import SignUp from "./Components/SignUp/SignUp";
@@ -18,7 +19,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/shop" element={<Shop></Shop>}></Route>
+        <Route
+          path="/shop"
+          element={
+            <RequireAuth>
+              <Shop></Shop>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/products" element={<Products></Products>}></Route>
         <Route path="/review" element={<Review></Review>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
