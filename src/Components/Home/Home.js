@@ -3,6 +3,7 @@ import AllProduct from "../AllProduct/AllProduct";
 import ExtraSection from "../ExtraSection/ExtraSection";
 import ExtraSectionTwo from "../ExtraSectionTwo/ExtraSectionTwo";
 import Banner from "./Banner";
+import "./Home.css";
 
 const Home = () => {
   const [allProducts, setAllProducts] = useState([]);
@@ -27,10 +28,12 @@ const Home = () => {
           <AllProduct key={allProduct._id} allProduct={allProduct}></AllProduct>
         ))}
       </div>
+
       <h1 className="mt-40 text-5xl font-bold">
         <span className="text-blue-700">Featured </span> &{" "}
         <span className="text-primary">Brands</span>
       </h1>
+
       <div className="mt-40">
         <ExtraSectionTwo></ExtraSectionTwo>
       </div>

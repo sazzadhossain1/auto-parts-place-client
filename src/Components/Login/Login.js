@@ -4,6 +4,8 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import GoogleButton from "../GoogleButton/GoogleButton";
+import Loading from "../Loading/Loading";
+import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -43,6 +45,7 @@ const Login = () => {
     <div>
       <div className="input-container">
         <div className="input-filed">
+          <p className="loading-logo">{loading && <Loading></Loading>}</p>
           <form onSubmit={handleUserLogin}>
             <h3 className="text-3xl font-medium m-10">
               Please <span className="text-primary text-5xl">Login</span>
@@ -71,13 +74,6 @@ const Login = () => {
             <br />
 
             <p style={{ color: "red" }}>{error?.message}</p>
-            {loading && (
-              <p style={{ color: "white" }}>
-                Loading...
-                <br />
-                Please Waite
-              </p>
-            )}
 
             <button className="signUp-button">Login</button>
           </form>
