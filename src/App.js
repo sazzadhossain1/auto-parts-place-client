@@ -7,6 +7,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
+import MyPortfolio from "./Components/MyPortfolio/MyPortfolio";
 import Navbar from "./Components/Navbar/Navbar";
 import NotFound from "./Components/NotFound/NotFound";
 import Products from "./Components/Products/Products";
@@ -21,6 +22,10 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/myPortfolio"
+          element={<MyPortfolio></MyPortfolio>}
+        ></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route
           path="/shop"

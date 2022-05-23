@@ -1,0 +1,6 @@
+.parent {
+  width: 700px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(62, 61, 63, 0.233);
+}

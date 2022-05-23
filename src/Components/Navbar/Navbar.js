@@ -111,6 +111,11 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          <li>
+            <Link className="text-xl lin" to="/myPortfolio">
+              My Portfolio
+            </Link>
+          </li>
           <li tabindex="0">
             <Link className="text-xl lin" to="/">
               Parent

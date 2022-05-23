@@ -23,7 +23,7 @@ const Home = () => {
         Our All <span className="text-primary">Products</span>{" "}
       </h1>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
+      <div className="grid px-32 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
         {allProducts.map((allProduct) => (
           <AllProduct key={allProduct._id} allProduct={allProduct}></AllProduct>
         ))}
