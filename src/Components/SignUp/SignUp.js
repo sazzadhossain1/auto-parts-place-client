@@ -86,7 +86,7 @@ const SignUp = () => {
               required
             />
             <br />
-
+            <p style={{ color: "red" }}>{error}</p>
             <button className="signUp-button">Sign Up</button>
           </form>
 

@@ -165,6 +165,14 @@ const Navbar = () => {
                   onClick={handleSignOut}
                   className="text-xl lin"
                   as={Link}
+                  to="/dashboard"
+                >
+                  Dashboard
+                </Link>
+                <Link
+                  onClick={handleSignOut}
+                  className="text-xl lin"
+                  as={Link}
                   to="/login"
                 >
                   Sign Out

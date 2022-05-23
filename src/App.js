@@ -3,10 +3,12 @@ import "./App.css";
 import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Contact/Contact";
+import Dashboard from "./Components/Dashboard/Dashboard";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
+import NotFound from "./Components/NotFound/NotFound";
 import Products from "./Components/Products/Products";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import Review from "./Components/Review/Review";
@@ -34,6 +36,15 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signUp" element={<SignUp></SignUp>}></Route>
+        <Route path="/*" element={<NotFound></NotFound>}></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        ></Route>
       </Routes>
       <Footer></Footer>
     </div>
