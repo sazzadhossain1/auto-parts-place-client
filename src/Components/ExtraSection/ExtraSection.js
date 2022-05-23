@@ -2,7 +2,7 @@ import React from "react";
 
 const ExtraSection = () => {
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-20">
+    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-20 mb-20">
       <div class="card w-96 bg-base-100 shadow-xl image-full mt-16 mx-auto">
         <figure>
           <img
