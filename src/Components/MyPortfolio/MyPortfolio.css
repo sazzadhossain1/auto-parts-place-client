@@ -1,11 +1,35 @@
 .parent {
-  width: 700px;
+  width: 900px;
   margin: auto;
-  padding: 10px;
-  box-shadow: 10px 10px 10px 10px rgba(62, 61, 63, 0.233);
+  padding: 30px;
+  margin-top: 30px;
+
+  /* box-shadow: 10px 10px 10px 10px rgba(62, 61, 63, 0.233); */
 }
-.live-link a {
+/* .live-link a {
   color: blue;
   font-size: large;
   font-weight: 600;
+} */
+
+.img-style {
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.img-div {
+  padding: 100px;
+}
+
+.divide {
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.projects-photo {
+  width: 400px;
+  height: 700px;
 }

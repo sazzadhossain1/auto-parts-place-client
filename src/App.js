@@ -27,19 +27,12 @@ function App() {
           path="/myPortfolio"
           element={<MyPortfolio></MyPortfolio>}
         ></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route
-          path="/shop"
-          element={
-            <RequireAuth>
-              <Shop></Shop>
-            </RequireAuth>
-          }
-        ></Route>
+        {/* <Route path="/about" element={<About></About>}></Route> */}
+
         <Route path="/products" element={<Products></Products>}></Route>
         <Route path="/review" element={<Review></Review>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
+        {/* <Route path="/contact" element={<Contact></Contact>}></Route> */}
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signUp" element={<SignUp></SignUp>}></Route>
         <Route path="/*" element={<NotFound></NotFound>}></Route>

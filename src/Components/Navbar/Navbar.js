@@ -60,11 +60,11 @@ const Navbar = () => {
                 Blog
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="text-xl" to="/contact">
                 Contact
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className="text-xl" to="/login">
                 Login
@@ -94,27 +94,27 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link className="text-xl lin" to="/about">
               About
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link className="text-xl lin" to="/shop">
               Shop
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link className="text-xl lin" to="/blog">
               Blog
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="text-xl lin" to="/contact">
               Contact
             </Link>
-          </li>
+          </li> */}
           <li>
             {user ? (
               <>

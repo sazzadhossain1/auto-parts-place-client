@@ -19,7 +19,7 @@ const Star = () => {
             ></path>
           </svg>
         </div>
-        <div class="stat-title">Total Likes</div>
+        <div class="stat-title">We Served 25k + Customer</div>
         <div class="stat-value text-primary">25.6K</div>
         <div class="stat-desc">21% more than last month</div>
       </div>
@@ -40,8 +40,8 @@ const Star = () => {
             ></path>
           </svg>
         </div>
-        <div class="stat-title">Page Views</div>
-        <div class="stat-value text-secondary">2.6M</div>
+        <div class="stat-title">120M + Annual Revenue</div>
+        <div class="stat-value text-secondary">120.6M</div>
         <div class="stat-desc">21% more than last month</div>
       </div>
 
@@ -53,9 +53,9 @@ const Star = () => {
             </div>
           </div>
         </div>
-        <div class="stat-value">86%</div>
-        <div class="stat-title">Tasks done</div>
-        <div class="stat-desc text-secondary">31 tasks remaining</div>
+        <div class="stat-value">33K +</div>
+        <div class="stat-title"> Reviews 50 </div>
+        <div class="stat-desc text-secondary">31 tasks+ Tools</div>
       </div>
     </div>
   );

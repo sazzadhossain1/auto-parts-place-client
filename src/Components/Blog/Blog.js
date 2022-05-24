@@ -87,6 +87,33 @@ const Blog = () => {
           These dependencies can then be eliminated.
         </p>
       </div>
+      <div>
+        <h1 className="text-3xl font-bold mb-5 mt-20">
+          Que : You have an array of products. Each product has a name, price,
+          description, etc. How will you implement a search to find products by
+          name?
+        </h1>
+        <p className="text-xl">
+          <span className="font-bold text-primary">Ans</span> : I will use rest
+          api for this and use the name of the specific product to find them. I
+          will find it in rest api.
+        </p>
+      </div>
+      <div>
+        <h1 className="text-3xl font-bold mb-5 mt-20">
+          Que : Why you do not set the state directly in React. For example, if
+          you have const [products, setProducts] = useState([]). Why you do not
+          set products = [...] instead, you use the setProducts?
+        </h1>
+        <p className="text-xl">
+          <span className="font-bold text-primary">Ans</span> : Prototype-based
+          programming is a style of object-oriented programming where behavior
+          reuse (known as inheritance) is performed through the process of
+          reusing existing objects that act as prototypes. This model can also
+          be referred to as prototype, prototype-based, classless or
+          example-based programming.
+        </p>
+      </div>
     </div>
   );
 };
