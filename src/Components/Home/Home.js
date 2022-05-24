@@ -4,6 +4,7 @@ import AllProduct from "../AllProduct/AllProduct";
 import ExploreCategory from "../ExploreCategory/ExploreCategory";
 import ExtraSection from "../ExtraSection/ExtraSection";
 import ExtraSectionTwo from "../ExtraSectionTwo/ExtraSectionTwo";
+import Review from "../Review/Review";
 import Star from "../Star/Star";
 import Banner from "./Banner";
 import "./Home.css";
@@ -34,6 +35,16 @@ const Home = () => {
       });
   }, []);
 
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("review.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setReviews(data);
+      });
+  }, []);
+
   return (
     <div>
       <Banner></Banner>
@@ -42,7 +53,10 @@ const Home = () => {
         Our All <span className="text-primary">Products</span>{" "}
       </h1>
 
-      <div className="grid px-16 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
+      <div
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto
+ "
+      >
         {allProducts.map((allProduct) => (
           <AllProduct
             key={allProduct._id}
@@ -57,11 +71,13 @@ const Home = () => {
         <span className="text-primary">Brands</span>
       </h1>
 
-      <div className="mt-40">
+      <div className="mt-40 ">
         <ExtraSectionTwo></ExtraSectionTwo>
       </div>
       <h1 className="mt-40 text-6xl font-bold">Car Spares OEM & Atermarkets</h1>
-      <ExtraSection></ExtraSection>
+      <div className="">
+        <ExtraSection></ExtraSection>
+      </div>
       <div>
         <h1 className="text-4xl mt-40 m-10">
           Explore <span className="text-primary">by</span> Category
@@ -82,6 +98,9 @@ const Home = () => {
 
         <div className="blank"></div>
         <Star></Star>
+      </div>
+      <div>
+        <Review reviews={reviews}></Review>
       </div>
     </div>
   );

@@ -25,8 +25,31 @@ const MyPortfolio = () => {
             <li className="text-xl ">NodeJs</li>
           </div>
         </div>
-        <div>
-          <h1>My Projects : Well Food</h1>
+        <div className="live-link">
+          <h1>
+            My Projects -1 :{" "}
+            <a
+              href="https://preeminent-froyo-e88516.netlify.app/Home"
+              target="blank"
+            >
+              Well Food
+            </a>
+          </h1>
+          <h1>
+            My Projects -2 :{" "}
+            <a
+              href="https://wedding-photography-c1317.firebaseapp.com/"
+              target="blank"
+            >
+              Your Dream Photo
+            </a>
+          </h1>
+          <h1>
+            My Projects -3 :{" "}
+            <a href="https://bike-bangladesh.web.app/" target="blank">
+              BIKE BANGLADESH
+            </a>
+          </h1>
         </div>
       </div>
     </div>

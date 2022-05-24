@@ -15,9 +15,6 @@ const ExtraSection = () => {
           <p className="text-3xl text-blue-700"> BEST CHOICE</p>
           <p>Sport Gas Shock </p>
           <p>Absorers</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Shop Now</button>
-          </div>
         </div>
       </div>
 
@@ -36,10 +33,6 @@ const ExtraSection = () => {
           <p>
             Sport Gas Shock <p>Absorers</p>
           </p>
-
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Shop Now</button>
-          </div>
         </div>
       </div>
 
@@ -57,10 +50,6 @@ const ExtraSection = () => {
           <p className="text-5xl text-primary">35% OFF</p>
           <p>Sport Gas Shock </p>
           <p>Absorers</p>
-
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Shop Now</button>
-          </div>
         </div>
       </div>
 
@@ -79,10 +68,6 @@ const ExtraSection = () => {
               for over 8,000 products
             </span>
           </p>
-
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Shop Now</button>
-          </div>
         </div>
       </div>
     </div>

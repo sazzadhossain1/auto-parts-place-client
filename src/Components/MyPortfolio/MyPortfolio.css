@@ -4,3 +4,8 @@
   padding: 10px;
   box-shadow: 10px 10px 10px 10px rgba(62, 61, 63, 0.233);
 }
+.live-link a {
+  color: blue;
+  font-size: large;
+  font-weight: 600;
+}
