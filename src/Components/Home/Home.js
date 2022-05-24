@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AllProduct from "../AllProduct/AllProduct";
+import ExploreCategory from "../ExploreCategory/ExploreCategory";
 import ExtraSection from "../ExtraSection/ExtraSection";
 import ExtraSectionTwo from "../ExtraSectionTwo/ExtraSectionTwo";
 import Star from "../Star/Star";
@@ -22,6 +23,17 @@ const Home = () => {
   const goToPurchase = (id) => {
     navigate(`/purchase/${id}`);
   };
+
+  const [categorys, setCategorys] = useState([]);
+
+  useEffect(() => {
+    fetch("category.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setCategorys(data);
+      });
+  }, []);
+
   return (
     <div>
       <Banner></Banner>
@@ -50,10 +62,24 @@ const Home = () => {
       </div>
       <h1 className="mt-40 text-6xl font-bold">Car Spares OEM & Atermarkets</h1>
       <ExtraSection></ExtraSection>
+      <div>
+        <h1 className="text-4xl mt-40 m-10">
+          Explore <span className="text-primary">by</span> Category
+        </h1>
+        <div className=" grid px-32  lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+          {categorys.map((category) => (
+            <ExploreCategory
+              key={category._id}
+              category={category}
+            ></ExploreCategory>
+          ))}
+        </div>
+      </div>
       <div className="m-40">
         <h1 className="text-4xl m-10 font-bold">
           Our <span className="text-primary">Acquisition</span>
         </h1>
+
         <div className="blank"></div>
         <Star></Star>
       </div>
