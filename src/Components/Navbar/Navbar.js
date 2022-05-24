@@ -166,13 +166,11 @@ const Navbar = () => {
           <li>
             {user ? (
               <>
-                <Link
-                  onClick={handleSignOut}
-                  className="text-xl lin"
-                  as={Link}
-                  to="/dashboard"
-                >
+                <Link className="text-xl lin" as={Link} to="/dashboard">
                   Dashboard
+                </Link>
+                <Link className="text-xl lin" as={Link} to="/purchase/:id">
+                  Purchase
                 </Link>
                 <Link
                   onClick={handleSignOut}

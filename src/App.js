@@ -10,6 +10,7 @@ import Login from "./Components/Login/Login";
 import MyPortfolio from "./Components/MyPortfolio/MyPortfolio";
 import Navbar from "./Components/Navbar/Navbar";
 import NotFound from "./Components/NotFound/NotFound";
+import Perches from "./Components/Perches/Perches";
 import Products from "./Components/Products/Products";
 import RequireAuth from "./Components/RequireAuth/RequireAuth";
 import Review from "./Components/Review/Review";
@@ -47,6 +48,14 @@ function App() {
           element={
             <RequireAuth>
               <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/purchase/:id"
+          element={
+            <RequireAuth>
+              <Perches></Perches>
             </RequireAuth>
           }
         ></Route>

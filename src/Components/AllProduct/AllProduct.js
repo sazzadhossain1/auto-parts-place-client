@@ -1,6 +1,6 @@
 import React from "react";
 
-const AllProduct = ({ allProduct }) => {
+const AllProduct = ({ allProduct, goToPurchase }) => {
   const {
     _id,
     image,
@@ -22,7 +22,9 @@ const AllProduct = ({ allProduct }) => {
         <p>Available Qun - {availableQuantity}</p>
         <p>Price - {Price}</p>
         <div className="card-actions justify-center mt-4">
-          <button className="btn btn-primary">Book Now</button>
+          <button onClick={() => goToPurchase(_id)} className="btn btn-primary">
+            Book Now
+          </button>
         </div>
       </div>
     </div>

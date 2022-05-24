@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AllProduct from "../AllProduct/AllProduct";
 import ExtraSection from "../ExtraSection/ExtraSection";
 import ExtraSectionTwo from "../ExtraSectionTwo/ExtraSectionTwo";
+import Star from "../Star/Star";
 import Banner from "./Banner";
 import "./Home.css";
 
@@ -9,12 +11,17 @@ const Home = () => {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
-    fetch("fakeData.json")
+    fetch("http://localhost:5000/product")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
       });
   }, []);
+
+  const navigate = useNavigate();
+  const goToPurchase = (id) => {
+    navigate(`/purchase/${id}`);
+  };
   return (
     <div>
       <Banner></Banner>
@@ -23,9 +30,13 @@ const Home = () => {
         Our All <span className="text-primary">Products</span>{" "}
       </h1>
 
-      <div className="grid px-32 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
+      <div className="grid px-16 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  ">
         {allProducts.map((allProduct) => (
-          <AllProduct key={allProduct._id} allProduct={allProduct}></AllProduct>
+          <AllProduct
+            key={allProduct._id}
+            allProduct={allProduct}
+            goToPurchase={goToPurchase}
+          ></AllProduct>
         ))}
       </div>
 
@@ -39,6 +50,13 @@ const Home = () => {
       </div>
       <h1 className="mt-40 text-6xl font-bold">Car Spares OEM & Atermarkets</h1>
       <ExtraSection></ExtraSection>
+      <div className="m-40">
+        <h1 className="text-4xl m-10 font-bold">
+          Our <span className="text-primary">Acquisition</span>
+        </h1>
+        <div className="blank"></div>
+        <Star></Star>
+      </div>
     </div>
   );
 };
