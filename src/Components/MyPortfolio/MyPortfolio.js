@@ -96,7 +96,7 @@ const MyPortfolio = () => {
             Click To Image For View Full Website
           </h1>
         </div>
-        <div className="grid max-w-7xl mx-auto lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+        <div className="grid  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto">
           <div>
             <a href="https://bike-bangladesh.web.app" target="blank">
               <p className="mb-10 text-2xl font-bold text-blue-700 ">
@@ -127,6 +127,28 @@ const MyPortfolio = () => {
               <img className="projects-photo" src={photo2} alt="" />
             </a>
           </div>
+        </div>
+      </div>
+      <div className="grid  lg:grid-cols-2 md:grid-cols-2 grid-cols-1  about-div">
+        <div>
+          <h1 className="text-3xl font-medium text-primary">About me</h1>
+          <p>
+            I am hard working, I am minimum of 10 - 12 hours every day.I love to
+            do this is's my life-everything.My goal is to satisfy clients, try
+            to understand what they want for there website, hellp them from
+            beginning to end the project and give support for every problem.If
+            need i communicate by video or audio conversations to understand the
+            problems and project requirements.After completionn website and
+            prijects i give instructions, How they can manage,edit,update,add
+            page and post on the website by themselves,if neede i send video
+            tutorials.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZgYgFC4mWC-v0d3Kl0mJeXeoWPhKXLdGx5wRvemhgmsJLnxnoDd2pPPjQrD53m7-k_k&usqp=CAU"
+            alt=""
+          />
         </div>
       </div>
     </div>

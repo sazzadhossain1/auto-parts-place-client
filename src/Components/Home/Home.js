@@ -99,7 +99,7 @@ const Home = () => {
         <div className="blank"></div>
         <Star></Star>
       </div>
-      <div>
+      <div className="mb-20">
         <Review reviews={reviews}></Review>
       </div>
     </div>
