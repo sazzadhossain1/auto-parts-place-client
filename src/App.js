@@ -1,9 +1,13 @@
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Contact/Contact";
+import AddReview from "./Components/Dashboard/AddReview";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import MyOrder from "./Components/Dashboard/MyOrder";
+import MyProfile from "./Components/Dashboard/MyProfile";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
@@ -40,10 +44,14 @@ function App() {
           path="/dashboard"
           element={
             <RequireAuth>
-              <Dashboard></Dashboard>
+              <Dashboard />
             </RequireAuth>
           }
-        ></Route>
+        >
+          <Route path="myorders" element={<MyOrder />} />
+          <Route path="addreview" element={<AddReview />} />
+          <Route path="myprofile" element={<MyProfile />} />
+        </Route>
         <Route
           path="/purchase/:id"
           element={
@@ -53,6 +61,7 @@ function App() {
           }
         ></Route>
       </Routes>
+      <ToastContainer />
       <Footer></Footer>
     </div>
   );

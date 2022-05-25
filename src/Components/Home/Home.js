@@ -13,7 +13,7 @@ const Home = () => {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://young-cove-44857.herokuapp.com/product")
       .then((res) => res.json())
       .then((data) => {
         setAllProducts(data);
@@ -38,7 +38,7 @@ const Home = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("review.json")
+    fetch("http://localhost:5000/review")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

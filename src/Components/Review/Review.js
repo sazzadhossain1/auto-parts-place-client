@@ -31,7 +31,10 @@ const Review = ({ reviews }) => {
                 <div class="card bg-base-100 shadow-xl">
                   <div class="avatar online">
                     <div class="w-24 rounded-full">
-                      <img src={review.image} alt="" />
+                      <img
+                        src="https://wp.brator.xyz/wp-content/uploads/2021/10/review-01.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div class="card-body">

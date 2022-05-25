@@ -1,0 +1,14 @@
+.dash-div {
+  background-color: gainsboro;
+  width: 250px;
+}
+.dash-div li {
+  background-color: rgb(167, 9, 9);
+  padding: 10px;
+  margin: 10px;
+  height: 50px;
+}
+.dash-div a {
+  color: white;
+  width: 100ox;
+}
