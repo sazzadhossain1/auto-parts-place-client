@@ -8,7 +8,7 @@ const AddReview = () => {
       review: review,
     };
     console.log(userReview);
-    const url = `http://localhost:5000/review`;
+    const url = `https://young-cove-44857.herokuapp.com/review`;
     fetch(url, {
       method: "POST",
       headers: {

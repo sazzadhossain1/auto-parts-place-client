@@ -5,3 +5,9 @@
 - hsow some components in dahsboard
 - create bloge components and answering some question in blog page
 - installation firebase,react firebase hook,react dom, react router dom,
+
+# client-side-code: https://github.com/programming-hero-web-course1/manufacturer-website-client-side-sazzadhossain1
+
+# server-side-code: https://github.com/programming-hero-web-course1/manufacturer-website-server-side-sazzadhossain1
+
+# Live site link: https://auto-parts-place.web.app
