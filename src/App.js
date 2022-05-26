@@ -61,7 +61,7 @@ function App() {
           }
         ></Route>
       </Routes>
-      <ToastContainer />
+
       <Footer></Footer>
     </div>
   );

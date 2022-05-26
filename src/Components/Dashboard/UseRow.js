@@ -8,7 +8,10 @@ const UseRow = ({ myOrder, index }) => {
       method: "delete",
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        alert("deleted successful");
+        console.log(data);
+      });
   };
 
   return (

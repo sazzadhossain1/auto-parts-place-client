@@ -6,7 +6,7 @@ import UseRow from "./UseRow";
 const MyOrder = () => {
   const [myOrders, setMyOrders] = useState([]);
   const [user] = useAuthState(auth);
-  const email = user.email;
+  const email = user?.email;
 
   useEffect(() => {
     fetch(`http://localhost:5000/order?email=${email}`)

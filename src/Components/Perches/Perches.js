@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import auth from "../../firebase.init";
 import "./Purchase.css";
 
 const Perches = () => {
   const { id } = useParams();
-
+  const [user] = useAuthState(auth);
   const [service, setService] = useState({});
+  const email = user?.email;
 
   useEffect(() => {
     const url = `https://young-cove-44857.herokuapp.com/product/${id}`;
@@ -55,7 +58,7 @@ const Perches = () => {
         body: JSON.stringify(data),
       })
         .then((res) => res.json())
-        .than((result) => {
+        .then((result) => {
           console.log(result);
         });
     }
@@ -90,6 +93,7 @@ const Perches = () => {
                 name="name"
                 type="text"
                 placeholder="Name"
+                defaultValue={user?.displayName}
                 required
               />
               <br />
@@ -98,6 +102,8 @@ const Perches = () => {
                 name="email"
                 type="email"
                 placeholder="Your Email Address"
+                defaultValue={user?.email}
+                readOnly
                 required
               />
               <br />
@@ -116,7 +122,7 @@ const Perches = () => {
                 name="product"
                 type="text"
                 placeholder="product"
-                defaultValue={service.quantity}
+                defaultValue={service.name}
                 required
               />
               <br />
